@@ -191,3 +191,12 @@ LOW / MEDIUM / HIGH
 - Improve fraud detection accuracy.
 - Add real-time transaction monitoring.
 - Add an alert system for high-risk transactions.
+
+## 🛡️ Safety & Scope
+
+This project is designed only for defensive fraud detection.
+
+- It identifies potentially risky payment transactions.
+- It does not provide methods to commit or bypass fraud.
+- The dataset used is synthetic and contains no real customer or payment information.
+- The model is intended as a demonstration and not as a production payment-security system.
