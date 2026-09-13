@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import pickle
 
@@ -69,6 +69,15 @@ def predict():
         "reasons": reasons
     })
 
+@app.route("/")
+def home():
+    return send_from_directory(".", "index.html")
 
+
+@app.route("/<path:filename>")
+def frontend(filename):
+    if filename in ["script.js", "style.css"]:
+        return send_from_directory(".", filename)
+    return "Not Found", 404
 if __name__ == "__main__":
     app.run(debug=True)
