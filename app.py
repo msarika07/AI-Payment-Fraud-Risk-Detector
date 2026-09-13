@@ -79,5 +79,6 @@ def frontend(filename):
     if filename in ["script.js", "style.css"]:
         return send_from_directory(".", filename)
     return "Not Found", 404
+    
 if __name__ == "__main__":
     app.run(debug=True)
