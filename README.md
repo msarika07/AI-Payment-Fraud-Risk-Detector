@@ -102,110 +102,34 @@ The prediction is returned through a Flask API and displayed on a web interface.
 
 
 
-\## 🧠 Machine Learning Model
+## 🤖 ML Model
 
+The project uses a **Random Forest Classifier** to detect potentially fraudulent transactions.
 
+### Model Features
+- Transaction amount
+- Transaction location
+- Transaction time
+- Number of transactions
 
-\### Algorithm
+### Dataset
+- 1,000 synthetic transactions
+- 80% used for training
+- 20% used for testing
 
+### Model Performance
 
+- **Accuracy:** 86.5%
+- **Precision:** 86.89%
+- **Recall:** 73.61%
+- **F1 Score:** 79.70%
+- **False Positive Cost:** ₹193,637
 
-Random Forest Classifier
-
-
-
-\### Model Configuration
-
-
-
-\- Number of trees: 200
-
-\- Maximum depth: 8
-
-\- Class weight: Balanced
-
-\- Random state: 42
-
-
-
-\---
-
-
-
-\## 📊 Dataset
-
-
-
-The project uses a synthetic dataset containing 1,000 transaction records.
-
-
-
-Features:
-
-
-
-| Feature | Description |
-
-|---|---|
-
-| amount | Transaction amount |
-
-| location | Transaction location |
-
-| time | Transaction time |
-
-| transactions | Number of transactions |
-
-| is\_fraud | Fraud label |
-
-
-
-The dataset is synthetic and is used for demonstration and model development. It does not contain real customer or payment information.
-
-
-
-\---
-
-
-
-\## 📈 Model Evaluation
-
-
-
-The dataset was divided into:
-
-
-
-\- 80% training data
-
-\- 20% testing data
-
-
-
-Current test results:
-
-
-
-\- Accuracy: \*\*86.5%\*\*
-
-\- Precision: \*\*86.89%\*\*
-
-\- Recall: \*\*73.61%\*\*
-
-\- F1 Score: \*\*79.70%\*\*
-
-
-
-Confusion Matrix:
-
-
+### Confusion Matrix
 
 ```text
-
-\[\[120   8]
-
-&#x20;\[ 19  53]]
-
+[[120   8]
+ [ 19  53]]
 
 ## 🔄 How It Works
 
