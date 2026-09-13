@@ -206,6 +206,7 @@ Confusion Matrix:
 
 &#x20;\[ 19  53]]
 
+
 ## 🔄 How It Works
 
 User enters transaction details
@@ -238,3 +239,31 @@ fraud_model.pkl
 🚦 RISK SCORE + RISK FACTORS
    ↓
 LOW / MEDIUM / HIGH
+
+## 🛠️ Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- Flask
+- Scikit-learn
+- Random Forest
+- CSV Dataset
+
+## ▶️ How to Run
+
+1. Install Python and the required libraries.
+2. Generate the dataset using `generate_dataset.py`.
+3. Train the Random Forest model using `train_model.py`.
+4. Start the Flask server using `py app.py`.
+5. Open `index.html` in a browser.
+6. Enter transaction details and click **Analyze Risk**.
+
+## 🚀 Future Improvements
+
+- Use real-world anonymized transaction datasets.
+- Add more transaction behavior features.
+- Improve fraud detection accuracy.
+- Add real-time transaction monitoring.
+- Add an alert system for high-risk transactions.
