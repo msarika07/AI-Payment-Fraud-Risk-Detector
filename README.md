@@ -222,3 +222,19 @@ Risk Percentage + Risk Factors
             ↓
 Risk Dashboard
 
+## 🏗️ Architecture
+
+👤 USER
+   ↓
+🌐 WEB INTERFACE
+HTML + CSS + JavaScript
+   ↓
+⚡ FLASK API
+app.py
+   ↓
+🤖 RANDOM FOREST MODEL
+fraud_model.pkl
+   ↓
+🚦 RISK SCORE + RISK FACTORS
+   ↓
+LOW / MEDIUM / HIGH
