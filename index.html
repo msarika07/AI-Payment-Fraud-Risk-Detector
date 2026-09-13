@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Payment Fraud Risk Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+       <h1>🛡️ AI Risk Manager</h1>
+       <p>AI-powered transaction fraud detection and risk analysis</p>
+
+    <p>Analyze a payment transaction and check its risk level.</p>
+
+    <label>Transaction Amount:</label>
+    <input type="number" id="amount">
+
+    <br><br>
+
+    <label>Transaction Location:</label>
+    <input type="text" id="location">
+
+    <br><br>
+
+    <label>Transaction Time:</label>
+    <input type="time" id="time">
+
+    <br><br>
+
+    <label>Number of Transactions:</label>
+    <input type="number" id="transactions" min="1">
+  
+    <br><br>
+    
+    <button onclick="analyzeRisk()">Analyze Risk</button>
+    
+    <div id="result"></div>
+    <div id="riskMeter">
+         <div id="riskBar"></div>
+         <div id="riskPercentage">0%</div>
+    <div id="riskGuide">
+       <p><b>Risk Score Guide</b></p>
+       <p>0-39% → Low Risk</p>
+       <p>40-69% → Medium Risk</p>
+       <p>70-100% → High Risk</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
