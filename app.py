@@ -23,7 +23,7 @@ def predict():
     data = request.json
 
     amount = float(data["amount"])
-    location = locations[data["location"]]
+    location = locations[data["location"].strip()]
     time = int(data["time"].split(":")[0])
     transactions = int(data["transactions"])
 
